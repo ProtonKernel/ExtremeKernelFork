@@ -1,55 +1,27 @@
-# ExtremeKernel for Exynos 9820 devices
+Proton+ based on ExtremeKernel for Exynos 9820 devices
+Forked from [ExtremeKernel](https://github.com/Ocin4ever/ExtremeKernel.git) by Ocin4ever. All credits go to the original author.
 
-## Features
-
-- TBD
-
-## Supported devices:
-
-G970F - S10e - beyond0lte
-
-G970N - S10e (Korean) - beyond0lteks
-
-G973F - S10 - beyond1lte
-
-G973N - S10 (Korean) - beyond1lteks
-
-G975F - S10+ - beyond2lte
-
-G975N - S10+ (Korean) - beyond2lteks
-
-G977B - S10 5G - beyondx
-
-G977N - S10 5G (Korean) - beyondxks
-
-N970F - Note 10 - d1
-
-N971N - Note 10 5G (Korean) - d1xks
-
-N975F - Note 10+ - d2s
-
-N976B - Note 10+ 5G - d2x
-
-N976N - Note 10+ 5G (Korean) - d2xks
-
-## Build instructions:
-
-1. Set up build environment as per Google documentation
-
+Build Instructions
+1. Set up the build environment
+Follow Google's official documentation:
+🔗 Android Build Requirements
 https://source.android.com/docs/setup/start/requirements
 
-2. Properly clone repository with submodules (KernelSU and toolchains)
-
-```git clone --recurse-submodules https://github.com/Ocin4ever/ExtremeKernel.git```
+2. Properly clone the repository with submodules
+   
+git clone --recurse-submodules https://github.com/ProtonKernel/ExtremeKernelFork.git
 
 3. Build for your device
 
-```./build.sh -m beyond2lte```
+./build.sh -m beyond2lte
 
-4. Fetch the flashable zip of the kernel that was just compiled
+4. Fetch the flashable kernel zip
+   
+build/out/[your_device]/Proton+...zip
 
-```build/out/[your_device]/ExtremeKernel...zip```
+5. Flash the kernel
+Use a supported custom recovery like TWRP to flash the zip.
 
-5. Flash it using a supported recovery like TWRP
+Enjoy! 🚀
 
-6. Enjoy!
+
